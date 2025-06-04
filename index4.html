@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffin Star - Sign In</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="logo">🧁 Muffin Star</h1>
+            <p>Where every bite is a delight &hearts;</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="form-toggle">
+                <button class="toggle-btn active" onclick="showForm('signin')">Sign In</button>
+                <button class="toggle-btn" onclick="showForm('signup')">Sign Up</button>
+            </div>
+
+            <!-- Sign In Form -->
+            <form class="form active" id="signin-form">
+                <div class="form-group">
+                    <label for="signin-email">Email Address</label>
+                    <input type="email" id="signin-email" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signin-password">Password</label>
+                    <input type="password" id="signin-password" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                
+                <button type="submit" class="submit-btn" onclick="location.href='index1.html'">Sign In</button>
+                
+                <div class="forgot-password">
+                    <a href="#" onclick="alert('Password reset functionality would be implemented here')">Forgot your password?</a>
+                </div>
+                
+                <div class="divider">
+                   
+                </div>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form class="form" id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms-agree" required>
+                    <label for="terms-agree">I agree to the Terms of Service and Privacy Policy</label>
+                </div>
+                
+                <button type="submit" class="submit-btn" onclick="location.href='index1.html'">Create Account</button>
+                
+                <div class="divider">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+</html>
